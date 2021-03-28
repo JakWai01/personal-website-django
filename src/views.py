@@ -8,9 +8,12 @@ def index(request):
     return render(request, 'src/feed.html', {'content': content})
 
 def blog(request):
-    content = Content.objects.filter(is_blog=True)
+    content = Content.objects.filter(is_blog=True).order_by('date').reverse()
     return render(request, 'src/feed.html', {'content': content})
 
 def projects(request):
-    content = Content.objects.filter(is_blog=False)
+    content = Content.objects.filter(is_blog=False).order_by('date').reverse()
     return render(request, 'src/feed.html', {'content': content})
+
+def about(request):
+    return render(request, 'src/about.html', {})
