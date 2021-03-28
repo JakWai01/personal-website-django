@@ -7,7 +7,7 @@ class Blogpost(models.Model):
     abstract = models.CharField(max_length = 1023)
     text = models.CharField(max_length = 8191)
 
-class Project():
+class Project(models.Model):
     title = models.CharField(max_length = 255)
     date = models.DateField(auto_created=True)
     abstract = models.CharField(max_length = 1023)
