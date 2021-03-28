@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Blogpost, Project
-    
+from .models import Content
+
 # Register your models here.
-admin.site.register(Blogpost)
-admin.site.register(Project)
+admin.site.register(Content)

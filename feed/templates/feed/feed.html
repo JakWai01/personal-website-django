@@ -3,5 +3,9 @@
 Jakob Waibel
 {% endblock %}
 {% block content %}
-Hello World
+<ul>
+{% for item in content%}
+    <li>{{ item.title }}</li>
+{% endfor %}
+</ul>
 {% endblock %}
