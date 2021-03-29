@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="max-width: 789px; padding-right: 0;">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a
           class="navbar-brand"
@@ -64,59 +64,141 @@
               href="/projects"
               >Projects</a
             >
-            <a
-              class="nav-item nav-link"
-              style="
-                font-family: 'Brush Script MT', 'Brush Script Std', cursive;
-                margin-right: 12px;
-              "
-              href="/about"
-              >About</a
-            >
           </div>
         </div>
       </nav>
       <hr style="margin: 0; height: 2px" />
-
       <div class="mt-5">
         <div class="row">
-          <div class="col-sm-10">{% block content %} {% endblock %}</div>
-          <div class="col-sm-2 card">
-            <img  src="{% static 'images/profil.png' %}" alt="Jakob Waibel" class="mt-5" style="border-radius: 50%; display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;">
-            <div class="d-flex flex-row mt-3 justify-content-between" style="width: 50%; margin-left: auto; margin-right: auto; display: block; border-radius: 50%;">
-              <a href="https://twitter.com/jakobwaibel" target="_blank"><img src="{% static 'images/twitter.png' %}" style="width: 80%;"></a>
-              <a href="https://github.com/JakWai01" target="_blank"><img src="{% static 'images/github.png' %}" style="width: 80%;"></a>
+          <div class="col-sm-8 px-0 mx-0">{% block content %} {% endblock %}</div>
+          <div class="col-sm-4 card mx-0 px-0">
+            <img
+              src="{% static 'images/profil.png' %}"
+              alt="Jakob Waibel"
+              class="mt-5"
+              style="
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+              "
+            />
+            <div
+              class="d-flex flex-row mt-3 justify-content-between"
+              style="
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                border-radius: 50%;
+              "
+            >
+              <a href="https://twitter.com/jakobwaibel" target="_blank"
+                ><img
+                  src="{% static 'images/twitter.png' %}"
+                  style="width: 80%"
+              /></a>
+              <a href="https://github.com/JakWai01" target="_blank"
+                ><img src="{% static 'images/github.png' %}" style="width: 80%"
+              /></a>
             </div>
-
-            <p class="mt-3 mb-0" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 22px; text-align: center; font-weight: bold;">
+            <p
+              class="mt-3 mb-0"
+              style="
+                display: block;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 22px;
+                text-align: center;
+                font-weight: bold;
+              "
+            >
               Jakob Waibel
             </p>
-            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 16px; text-align: center; margin-top: -4px; margin-bottom: 2px;">
+            <p
+              style="
+                display: block;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 16px;
+                text-align: center;
+                margin-top: -4px;
+                margin-bottom: 2px;
+              "
+            >
               Student
             </p>
-            <div style="width: 75%; display: block; margin-left: auto; margin-right:auto; text-align:center;" class="justify-content-between mb-3">
+            <div
+              style="
+                width: 75%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              "
+              class="justify-content-between mb-3"
+            >
               <a>
-                <img style="height: 16px;" src="https://img.shields.io/badge/Grades-PDF-blue?style=flat&logo=google">
+                <img
+                  style="height: 16px"
+                  src="https://img.shields.io/badge/Grades-PDF-blue?style=flat&logo=google"
+                />
               </a>
               <a>
-                <img style="height: 16px;" src="https://img.shields.io/badge/CV-PDF-blue?style=flat&logo=google">
+                <img
+                  style="height: 16px"
+                  src="https://img.shields.io/badge/CV-PDF-blue?style=flat&logo=google"
+                />
               </a>
             </div>
-            <hr style="margin: 0; height: 1px; width: 75%; margin-left: auto; margin-right: auto" />
-            <p class="mt-3" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px; text-align:center; font-size: 12px;">
-             <i class="fa fa-terminal" aria-hidden="true"></i> &nbsp;Python, Go and Linux
+            <hr
+              style="
+                margin: 0;
+                height: 1px;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <p
+              class="mt-3"
+              style="
+                display: block;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                text-align: center;
+                font-size: 12px;
+              "
+            >
+              <i class="fa fa-terminal" aria-hidden="true"></i> &nbsp;Python, Go
+              and Linux
             </p>
-            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px; text-align:center; font-size: 12px;">
-              <i class="fas fa-running"></i> &nbsp; Runner and Vegan 
+            <p
+              style="
+                display: block;
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                text-align: center;
+                font-size: 12px;
+              "
+            >
+              <i class="fas fa-running"></i> &nbsp;Runner and Vegan
             </p>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://kit.fontawesome.com/d1f98b545a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d1f98b545a.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"

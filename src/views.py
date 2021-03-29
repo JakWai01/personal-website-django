@@ -14,6 +14,3 @@ def blog(request):
 def projects(request):
     content = Content.objects.filter(is_blog=False).order_by('date').reverse()
     return render(request, 'src/feed.html', {'content': content})
-
-def about(request):
-    return render(request, 'src/about.html', {})
