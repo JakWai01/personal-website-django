@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,10 +76,33 @@
           </div>
         </div>
       </nav>
-      <hr style="margin: 0; height: 2px;">
+      <hr style="margin: 0; height: 2px" />
 
-      <div class="mt-2">
-      {% block content %} {% endblock %}
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-sm-10">{% block content %} {% endblock %}</div>
+          <div class="col-sm-2 card">
+            <img  src="{% static 'images/profil.png' %}" alt="Jakob Waibel" class="mt-5" style="border-radius: 50%; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;">
+            <div class="d-flex flex-row mt-3 justify-content-between" style="width: 50%; margin-left: auto; margin-right: auto; display: block; border-radius: 50%;">
+              <a href="https://twitter.com/jakobwaibel" target="_blank"><img src="{% static 'images/twitter.png' %}" style="width: 80%;"></a>
+              <a href="https://github.com/JakWai01" target="_blank"><img src="{% static 'images/github.png' %}" style="width: 80%;"></a>
+            </div>
+
+            <p class="mt-3 mb-0" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 22px; text-align: center; font-weight: bold;">
+              Jakob Waibel
+            </p>
+            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 16px; text-align: center; margin-top: -4px;">
+              Student
+            </p>
+            <hr style="margin: 0; height: 1px; width: 75%; margin-left: auto; margin-right: auto" />
+            <p class="mt-3" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px;">
+            
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <script
