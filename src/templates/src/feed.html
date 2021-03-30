@@ -1,11 +1,11 @@
 {% extends 'src/base.html' %}
 {% load static %} {% block title %} Jakob Waibel {% endblock %} 
 {% block content %}
-<ul style="list-style-type: none; list-style:none; padding-left:0px;">
+<ul style="list-style-type: none; list-style:none; padding-left:12px;">
   {% for item in content%}
   <li style="font-family: 'Brush Script MT; ', 'Brush Script Std', cursive;" class="mb-3">
-    <div class="card" style="width: 95%;">
-      <img class="card-img-top" style="height: 90px; object-fit: cover;" src="{% static 'images/person.jpeg' %}" alt="Card image cap" />
+    <div class="card" style="width: 100%;">
+      <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{% static 'images/person.jpeg' %}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">{{ item.title }}</h5>
         <p class="card-text">
