@@ -7,4 +7,6 @@ class Content(models.Model):
     abstract = models.CharField(max_length = 1023)
     text = models.CharField(max_length = 8191)
     is_blog = models.BooleanField(default = False)
+    image_url = models.CharField(max_length = 1024)
+    content_url = models.CharField(max_length = 1024)
 

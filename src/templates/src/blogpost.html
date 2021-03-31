@@ -5,7 +5,7 @@
 <ul style="list-style-type: none; list-style:none; padding-left:12px;">
   <li  class="mb-3">
     <div class="card" style="width: 100%;">
-      <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{% static 'images/person.jpeg' %}" alt="Card image cap" />
+      <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{{ content.image_url }}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">{{ item.title }}</h5>
         <p class="card-text" style="font-family: 'Brush Script MT; ', 'Brush Script Std', cursive;">
@@ -16,11 +16,9 @@
           {{ content.abstract }}
           </p>
           <p>
-          <!-- {{ content.text }}-->
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-        </p>
-      </div>
+          {{ content.text }}
+          </p>  
+          </div>
     </div>
   </li>
 </ul>
