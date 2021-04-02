@@ -11,3 +11,4 @@ python-augeas==0.5.0
 python-dateutil==2.8.1
 python-dotenv==0.14.0
 python-utils==2.4.0
+whitenoise==5.2.0
