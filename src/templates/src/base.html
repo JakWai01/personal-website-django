@@ -39,53 +39,26 @@
     </style>
   </head>
   <body>
-    <div
-      class="container"
-      style="max-width: 789px; padding-right: 0; padding-left: 0"
-    >
+    <div class="container" style="max-width: 789px; padding-right: 0; padding-left: 0">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a
-          class="navbar-brand"
-          href="/"
-          style="
-            font-size: 16px;
-            font-style: italic;
-          "
-          ><q cite="https://quotes.yourdictionary.com/author/quotes/551366"
-            >Software is like sex, it's better when it's free</q
-          ></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="/" style="font-size: 16px; font-style: italic;">
+          <q cite="https://quotes.yourdictionary.com/author/quotes/551366">
+            Software is like sex, it's better when it's free</q>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a
-              class="nav-item nav-link"
-              href="/"
-              >Feed</a
-            >
-            <a
-              class="nav-item nav-link"
-              href="/blog"
-              >Blog</a
-            >
-            <a
-              class="nav-item nav-link"
-              href="/projects"
-              >Projects</a
-            >
+            <a class="nav-item nav-link" href="/">
+            Feed
+            </a>
+            <a class="nav-item nav-link" href="/blog">
+            Blog
+            </a>
+            <a class="nav-item nav-link" href="/projects">
+            Projects
+            </a>
           </div>
         </div>
       </nav>
@@ -95,157 +68,46 @@
           <div class="col-sm-7 px-0">{% block content %} {% endblock %}</div>
           <div class="col-sm-1" style="width: 7%"></div>
           <div class="col-sm-4 card" style="margin-bottom: 15px">
-            <img
-              src="{% static 'images/profil.png' %}"
-              alt="Jakob Waibel"
-              class="mt-5"
-              style="
-                border-radius: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 75%;
-              "
-            />
-            <div
-              class="d-flex flex-row mt-3 justify-content-between"
-              style="
-                width: 50%;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-                border-radius: 50%;
-              "
-            >
-              <a href="https://twitter.com/jakobwaibel" target="_blank"
-                ><img
-                  src="{% static 'images/twitter.png' %}"
-                  style="width: 80%"
-              /></a>
-              <a href="https://github.com/JakWai01" target="_blank"
-                ><img src="{% static 'images/github.png' %}" style="width: 80%"
-              /></a>
+            <img src="{% static 'images/profil.png' %}" alt="Jakob Waibel" class="mt-5" style="border-radius: 50%; display: block; margin-left: auto; margin-right: auto; width: 75%;"/>
+            <div class="d-flex flex-row mt-3 justify-content-between" style="width: 50%; margin-left: auto; margin-right: auto; display: block; border-radius: 50%;">
+              <a href="https://twitter.com/jakobwaibel" target="_blank">
+                <img src="{% static 'images/twitter.png' %}" style="width: 80%"/>
+              </a>
+              <a href="https://github.com/JakWai01" target="_blank">
+                <img src="{% static 'images/github.png' %}" style="width: 80%"/>
+              </a>
             </div>
-            <p
-              class="mt-3 mb-0"
-              style="
-                display: block;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 22px;
-                text-align: center;
-                font-weight: bold;
-              "
-            >
+            <p class="mt-3 mb-0" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 22px; text-align: center; font-weight: bold;">
               Jakob Waibel
             </p>
-            <p
-              style="
-                display: block;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 16px;
-                text-align: center;
-                margin-top: -4px;
-                margin-bottom: 2px;
-              "
-            >
+            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 16px; text-align: center; margin-top: -4px; margin-bottom: 2px;">
               Student
             </p>
-            <div
-              style="
-                width: 75%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-              "
-              class="justify-content-between mb-3"
-            >
+            <div style="width: 75%; display: block; margin-left: auto; margin-right: auto; text-align: center;" class="justify-content-between mb-3">
               <a>
-                <img
-                  style="height: 16px"
-                  src="https://img.shields.io/badge/Grades-PDF-blue?style=flat&logo=google"
-                />
+                <img style="height: 16px" src="https://img.shields.io/badge/Grades-PDF-blue?style=flat&logo=google"/>
               </a>
               <a>
-                <img
-                  style="height: 16px"
-                  src="https://img.shields.io/badge/CV-PDF-blue?style=flat&logo=google"
-                />
+                <img style="height: 16px" src="https://img.shields.io/badge/CV-PDF-blue?style=flat&logo=google"/>
               </a>
             </div>
-            <hr
-              style="
-                margin: 0;
-                height: 1px;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-              "
-            />
-            <p
-              class="mt-3"
-              style="
-                display: block;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 12px;
-                text-align: center;
-              "
-            >
-              <i class="fa fa-terminal" aria-hidden="true"></i> &nbsp;Python, Go
-              and Linux
+          <hr style="margin: 0; height: 1px; width: 75%; margin-left: auto; margin-right: auto;"/>
+            <p class="mt-3" style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px; text-align: center;">
+              <i class="fa fa-terminal" aria-hidden="true"></i> &nbsp;Python, Go and Linux
             </p>
-            <p
-              style="
-                display: block;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 12px;
-                text-align: center;
-              "
-            >
+            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px; text-align: center;">
               <i class="fas fa-running"></i> &nbsp;Runner and Vegan
             </p>
-            <p
-              style="
-                display: block;
-                width: 75%;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 12px;
-                text-align: center;
-              "
-            >
+            <p style="display: block; width: 75%; margin-left: auto; margin-right: auto; font-size: 12px; text-align: center;">
               <i class="far fa-envelope"></i> &nbsp;mail@jakobwaibel.com
             </p>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/d1f98b545a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1f98b545a.js" crossorigin="anonymous"></script>
   </body>
 </html>
