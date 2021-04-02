@@ -13,9 +13,12 @@
     <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{{ item.image_url }}" alt="Card image cap" />
       <div class="card-body">
         <h1 class="card-title" style="font-weight: bold; font-size: 24px;">{{ item.title }}</h5>
-        <p class="card-text">
+        <p class="card-text mb-1">
           {{ item.abstract }}
         </p>
+        <span style="font-size: 12px;">
+        {{ item.date }}
+        </span>
     </div> 
     </a>
     </div>
