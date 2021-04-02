@@ -4,16 +4,12 @@
 <ul style="list-style-type: none; list-style:none; padding-left:12px;">
   {% for item in content%}
   <li  class="mb-3">
-    
-    
-    <!-- check if content url works --> 
     <div class="card" style="width: 100%;">
     {% if item.is_blog == True %}
       <a href="{% url 'blogpost' item.id %}" style="text-decoration: none; color: black;">
     {% else %}
       <a href="{{ item.content_url }}" style="text-decoration: none; color: black;" target="_blank">
     {% endif %}
-    
     <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{{ item.image_url }}" alt="Card image cap" />
       <div class="card-body">
         <h1 class="card-title" style="font-weight: bold; font-size: 24px;">{{ item.title }}</h5>
@@ -23,7 +19,6 @@
     </div> 
     </a>
     </div>
-
   </li>
   {% endfor %}
 </ul>

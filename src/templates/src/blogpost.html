@@ -1,30 +1,32 @@
-{% extends 'src/base.html' %}
-{% load static %}
-{% block title %}{{ content.title }} - Jakob Waibel{% endblock%}
-{% block content %}
+{% extends 'src/base.html' %} {% load static %} {% block title %}{{
+content.title }} - Jakob Waibel{% endblock%} {% block content %}
 
-<ul style="list-style-type: none; list-style:none; padding-left:12px;">
-  <li  style="padding-bottom: 0px;">
-    <div class="card" style="width: 100%;">
-      <img class="card-img-top" style="height: 90px;object-fit: cover;" src="{{ content.image_url }}" alt="Card image cap" />
+<ul style="list-style-type: none; list-style: none; padding-left: 12px">
+  <li style="padding-bottom: 0px">
+    <div class="card" style="width: 100%">
+      <img
+        class="card-img-top"
+        style="height: 90px; object-fit: cover"
+        src="{{ content.image_url }}"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h5 class="card-title">{{ item.title }}</h5>
-        <p class="card-text" style="font-family: 'Brush Script MT; ', 'Brush Script Std', cursive;">
-          <p style="font-weight: bold; font-size: 24px;">
-          {{ content.title }}
-          </p>
-          <p id="content" style="display: none;">
-
-          </p>
-          <p id="content2">
-
-          </p>
-          </div>
+        <p
+          class="card-text"
+          style="font-family: 'Brush Script MT; ', 'Brush Script Std', cursive"
+        ></p>
+        <p style="font-weight: bold; font-size: 24px">{{ content.title }}</p>
+        <p id="content" style="display: none"></p>
+        <p id="content2"></p>
+      </div>
     </div>
   </li>
 </ul>
 <script>
-  document.getElementById("content").innerHTML = "{{ markdown }}" 
-  document.getElementById("content2").innerHTML = document.getElementById("content").textContent
+  document.getElementById("content").innerHTML = "{{ markdown }}";
+  document.getElementById("content2").innerHTML = document.getElementById(
+    "content"
+  ).textContent;
 </script>
 {% endblock %}
