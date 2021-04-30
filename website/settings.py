@@ -27,8 +27,7 @@ SECRET_KEY = 'w5c8v2w)3*6)or!0y6w8==(glb7%fw&b1)vlb%er#^^iltezz_'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    # "jakobwaibel.herokuapp.com", "localhost", "127.0.0.1"
-    "jakobwaibel.com", "localhost", "127.0.0.1"
+    "jakobwaibel.herokuapp.com", "localhost", "127.0.0.1"
 ]
 
 
